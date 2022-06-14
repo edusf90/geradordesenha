@@ -63,4 +63,48 @@ body{
 
 .title{
   color: #fff;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.password{
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.40);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 1px solid #313131;
+  transition: transform 0.5s;
+}
+
+.password:hover{
+  transform: scale(1.05);
+}
+
+.tooltip{
+  color: #fff;
+  position: relative;
+  top: 20px;
+  padding: 6px 8px;
+  background: rgb(15, 15, 15);
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition:  all 0.5s ease-in-out; 
+}
+
+.hide{
+  display: none;
+}
+
+.container-password:hover .tooltip{
+  visibility: visible;
+  bottom: 50px;
+  opacity: 1;
 }

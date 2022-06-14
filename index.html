@@ -11,23 +11,32 @@
   <body>
     <img class="logo" src="assets/logo.png" alt="Logo Gerador de Senha" />
     <main class="container-input">
-      <span>Tamanho <span id="valor">10</span> caracteres</span>
+      <span>Tamanho <span id="valor"></span> caracteres</span>
       <input
         id="slider"
         class="slider"
         type="range"
-        min="5"
+        min="4"
         max="25"
         value="15"
       />
-
-      <button id="button" class="button-cta">Gerar Senha</button>
+      <!-- <div>
+        <input type="checkbox" />
+        <label for="">Incluir letras minusculas</label>
+      </div> -->
+      <button id="button" class="button-cta" onclick="generationPassword()">
+        Gerar Senha
+      </button>
     </main>
 
-    <div id="container-password" class="container-password hide">
+    <div
+      id="container-password"
+      onclick="copiarSenha()"
+      class="container-password hide"
+    >
       <span class="title">Sua senha gerada foi:</span>
       <span id="password" class="password">1234566</span>
-      <span>Clique na senha para copiar ☝🏼</span>
+      <span class="tooltip">Clique na senha para copiar ☝🏼</span>
     </div>
     <script src="script/script.js"></script>
   </body>
