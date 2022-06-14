@@ -28,6 +28,10 @@ body{
 .container-input span{
   color: #fff;
   font-size: 22px;
+ 
+}
+.valor{
+  border-left: 1px;
 }
 
 .slider{
@@ -38,10 +42,14 @@ body{
   height: 18px;
   outline: none;
   margin-top: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .button-cta{
   height: 40px;
+
+
   background-color: #3eb72b;
   border: 0;
   border-radius: 5px;
@@ -50,6 +58,9 @@ body{
   color: #FFF;
   font-weight: bold;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-password{
@@ -107,4 +118,36 @@ body{
   visibility: visible;
   bottom: 50px;
   opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .logo{
+    max-width: 80%;
+    
+  }
+  .slider{
+    width: 80%;
+  }
+
+  .button-cta{
+    width: 80%;
+  }
+
+  .container-password{
+    width: 80%;
+  }
+
+  .container-input span{
+    width: 80%;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  
 }
