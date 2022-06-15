@@ -114,7 +114,7 @@ body{
   display: none;
 }
 
-.container-password:hover .tooltip{
+.container-password .tooltip{
   visibility: visible;
   bottom: 50px;
   opacity: 1;
@@ -154,9 +154,7 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightslategray;
-  }
+  
 
   .logo{
     max-width: 70%;

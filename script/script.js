@@ -3,6 +3,7 @@ let buttonElement = document.querySelector('#button')
 let sizePassoword = document.querySelector('#valor')
 let password = document.querySelector('#password')
 let containerPassword = document.querySelector('#container-password')
+let tooltipx = document.querySelector('.tooltip-bloqueado')
 
 let charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
 let novaSenha = ''
@@ -31,4 +32,23 @@ function copiarSenha() {
     .catch(() => {
       alert('something went wrong')
     })
+}
+const myTimeout = setTimeout(myGreeting, 5000)
+
+// function copiado() {
+//   tooltipx.classList.remove('hide')
+//   tooltipx.classList.add('tooltip')
+// }
+
+let timeout
+
+function copiado() {
+  tooltipx.classList.remove('hide')
+  tooltipx.classList.add('tooltip')
+  timeout = setTimeout(alertFunc, 2000)
+}
+
+function alertFunc() {
+  tooltipx.classList.remove('tooltip')
+  tooltipx.classList.add('hide')
 }
