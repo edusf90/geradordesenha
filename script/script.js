@@ -33,16 +33,11 @@ function copiarSenha() {
       alert('something went wrong')
     })
 }
-const myTimeout = setTimeout(myGreeting, 5000)
-
-// function copiado() {
-//   tooltipx.classList.remove('hide')
-//   tooltipx.classList.add('tooltip')
-// }
 
 let timeout
 
 function copiado() {
+  copiarSenha()
   tooltipx.classList.remove('hide')
   tooltipx.classList.add('tooltip')
   timeout = setTimeout(alertFunc, 2000)
